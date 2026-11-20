@@ -1,0 +1,7 @@
+config.py
+.clave_secreta
+registro_seguridad.log*
+respaldos/
+__pycache__/
+*.pyc
+*.7z

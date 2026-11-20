@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beef | Carnes premium</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8.4.7/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header" id="inicio">
+        <div class="menu container">
+            <a href="#inicio" class="logo">Beef<span>.</span></a>
+            <input type="checkbox" id="menu">
+            <label for="menu"><img src="Images/menu.png" class="menu-icono" alt="menu"></label>
+
+            <nav class="navbar">
+                <ul class="menu-lista">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#lista">Platos</a></li>
+                    <li><a href="#lista-2">Cortes</a></li>
+                    <li><a href="#recetas">Recetas</a></li>
+                    <li><a href="#horarios">Horarios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <img src="Images/car.svg" id="img-carrito" alt="Carrito">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Cantidad</th>
+                                        <th>Subtotal</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                               </tbody>
+                           </table>
+                           <p class="total-carrito">Total: <span id="total-carrito">$0</span></p>
+                           <div class="carrito-acciones">
+                               <a href="#" id="vaciar-carrito" class="btn-2">Vaciar carrito</a>
+                               <button type="button" id="hacer-pedido" class="btn-4">Hacer pedido</button>
+                           </div>
+                       </div>
+                   </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-content container">
+            <span class="header-tag">Asador &amp; carnicería</span>
+            <h1>Carnes premium a la parrilla</h1>
+            <p>Cortes seleccionados y platos preparados al carbón, directo a tu mesa.</p>
+            <div class="botons">
+                <a href="#lista" class="btn-1">Ver platos</a>
+                <a href="#lista-2" class="btn-1 btn-1-outline">Comprar cortes</a>
+            </div>
+
+            <div class="socials-1">
+
+                <img src="Images/s1.svg" alt="Instagram de Beef">
+                <img src="Images/s2.svg" alt="Facebook de Beef">
+                <img src="Images/s3.svg" alt="X (Twitter) de Beef">
+            </div>
+            <a href="#lista">
+                <img class="arrow" src="Images/arrow.svg" alt="Bajar a los platos">
+            </a>
+        </div>
+    </header>
+
+    <section class="recetas container">
+        <div class="recetas-1">
+            <h3>Platos preparados al momento por nuestros parrilleros</h3>
+            <hr>
+            <p>Nuestro menú</p>
+        </div>
+        <div class="recetas-2">
+            135 <br> recetas <br> de carnes
+        </div>
+    </section>
+
+    <section class="platillos container cargando" id="lista">
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <article class="platillo">
+                        <div class="platillo-img">
+                            <img src="Images/pl1.webp" alt="Filet mignon a la parrilla con papas y romero">
+                        </div>
+                        <h3>Filet mignon a la parrilla</h3>
+                        <p class="platillo-desc">Medallón grueso de lomo fino sellado a la parrilla, jugoso por dentro.
+                            Acompañado de papas doradas, granos de pimienta y una ramita de romero fresco.
+                        </p>
+                        <div class="platillo-footer">
+                            <p class="precio">$52,000 <span>/ plato</span></p>
+                            <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar</a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="swiper-slide">
+                    <article class="platillo">
+                        <div class="platillo-img">
+                            <img src="Images/pl2.webp" alt="Filetes de lomo a la parrilla con ajo y romero">
+                        </div>
+                        <h3>Lomo al ajo y romero</h3>
+                        <p class="platillo-desc">Dos filetes de lomo asados a la parrilla, sazonados con sal gruesa y pimienta.
+                            Servidos con dientes de ajo confitados, romero y hierbas aromáticas.
+                        </p>
+                        <div class="platillo-footer">
+                            <p class="precio">$45,000 <span>/ plato</span></p>
+                            <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar</a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="swiper-slide">
+                    <article class="platillo">
+                        <div class="platillo-img">
+                            <img src="Images/pl3.webp" alt="Carne glaseada con puré de papa y brócoli">
+                        </div>
+                        <h3>Carne glaseada con puré</h3>
+                        <p class="platillo-desc">Corte de res bañado en su salsa de cocción, tierno y brillante.
+                            Acompañado de un cremoso puré de papa y brócoli al vapor.
+                        </p>
+                        <div class="platillo-footer">
+                            <p class="precio">$34,000 <span>/ plato</span></p>
+                            <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar</a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="swiper-slide">
+                    <article class="platillo">
+                        <div class="platillo-img">
+                            <img src="Images/pl4.webp" alt="Bife a la parrilla con vegetales salteados">
+                        </div>
+                        <h3>Bife con vegetales</h3>
+                        <p class="platillo-desc">Bife de res marcado a la parrilla, servido con zanahoria, brócoli, calabacín,
+                            champiñones, tomate cherry y papas fritas con tomillo.
+                        </p>
+                        <div class="platillo-footer">
+                            <p class="precio">$38,000 <span>/ plato</span></p>
+                            <a href="#" class="agregar-carrito btn-2" data-id="4">Agregar</a>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+
+    <section class="recetas container">
+        <div class="recetas-2">
+            100 <br>tipos <br> de carnes
+        </div>
+        <div class="recetas-1">
+            <h3>Cortes frescos seleccionados, listos para tu cocina</h3>
+            <hr>
+            <p>Precios por kilo</p>
+        </div>
+    </section>
+
+    <section class="platillos container cargando" id="lista-2">
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <article class="platillo">
+                        <div class="platillo-img">
+                            <img src="Images/c1.webp" alt="Corte crudo de ribeye marmoleado">
+                        </div>
+                        <h3>Ribeye (ojo de bife)</h3>
+                        <p class="platillo-desc">Corte con abundante marmoleo de grasa que le da un sabor intenso
+                            y una textura muy jugosa. Ideal para la parrilla o a la plancha.
+                        </p>
+                        <div class="platillo-footer">
+                            <p class="precio">$68,000 <span>/ kg</span></p>
+                            <a href="#" class="agregar-carrito btn-2" data-id="5">Agregar</a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="swiper-slide">
+                    <article class="platillo">
+                        <div class="platillo-img">
+                            <img src="Images/c2.webp" alt="Medallones de lomo de res crudos">
+                        </div>
+                        <h3>Medallones de lomo</h3>
+                        <p class="platillo-desc">Filetes magros y gruesos, casi sin grasa, de textura suave y tierna.
+                            Perfectos para sellar en sartén o preparar a la parrilla.
+                        </p>
+                        <div class="platillo-footer">
+                            <p class="precio">$58,000 <span>/ kg</span></p>
+                            <a href="#" class="agregar-carrito btn-2" data-id="6">Agregar</a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="swiper-slide">
+                    <article class="platillo">
+                        <div class="platillo-img">
+                            <img src="Images/c3.webp" alt="Chuleta de res cruda con hueso">
+                        </div>
+                        <h3>Chuleta de res con hueso</h3>
+                        <p class="platillo-desc">Corte de paleta con hueso y vetas de grasa que aportan mucho sabor.
+                            Excelente para asar lentamente, hornear o preparar a la brasa.
+                        </p>
+                        <div class="platillo-footer">
+                            <p class="precio">$28,000 <span>/ kg</span></p>
+                            <a href="#" class="agregar-carrito btn-2" data-id="7">Agregar</a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="swiper-slide">
+                    <article class="platillo">
+                        <div class="platillo-img">
+                            <img src="Images/c4.webp" alt="Pieza cruda de lomo de aguja">
+                        </div>
+                        <h3>Lomo de aguja</h3>
+                        <p class="platillo-desc">Pieza entera del cuello de la res, con buen marmoleo y mucho sabor.
+                            Ideal para estofados, sudados o cocciones lentas al horno.
+                        </p>
+                        <div class="platillo-footer">
+                            <p class="precio">$26,000 <span>/ kg</span></p>
+                            <a href="#" class="agregar-carrito btn-2" data-id="8">Agregar</a>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section class="recetas container">
+        <div class="recetas-1">
+            <h3>Recetas de la casa para preparar con nuestros cortes</h3>
+            <hr>
+            <p>Recetas</p>
+        </div>
+        <div class="recetas-2">
+            Cocina <br> como un <br> parrillero
+        </div>
+    </section>
+
+    <!-- ---------- Recetas ---------- -->
+    <section class="container seccion-recetas" id="recetas">
+        <div class="recetas-grid" id="recetas-grid"></div>
+    </section>
+
+    <!-- ---------- Horarios ---------- -->
+    <section class="container seccion-horarios" id="horarios">
+        <div class="horarios-card">
+            <div class="horarios-info">
+                <span class="header-tag">Horarios de atención</span>
+                <h3>Te esperamos todos los días</h3>
+                <p id="estado-local" class="estado-local">Consultando horario...</p>
+                <ul class="horarios-notas">
+                    <li>🛵 Domicilios hasta 30 minutos antes del cierre.</li>
+                    <li>🍖 Venta de cortes por kilo en el mismo horario.</li>
+                    <li>📅 Los festivos atendemos en horario de domingo.</li>
+                </ul>
+            </div>
+            <ul class="horarios-lista" id="horarios-lista"></ul>
+        </div>
+    </section>
+
+    <!-- ---------- Promociones ---------- -->
+    <section class="recetas container" id="promociones">
+        <div class="recetas-1">
+            <h3>Promociones y servicios para tus pedidos</h3>
+            <hr>
+            <p>Promociones</p>
+        </div>
+        <div class="recetas-2">
+            Más <br> parrilla <br> por menos
+        </div>
+    </section>
+
+    <section class="container seccion-info">
+        <div class="info-grid">
+            <article class="info-card">
+                <span class="info-icono" aria-hidden="true">🛵</span>
+                <h4>Domicilio sin costo</h4>
+                <p>Los pedidos a domicilio que haces por la página no tienen recargo: pagas solo tus platos y cortes.</p>
+                <a href="#lista" class="btn-2">Ver platos</a>
+            </article>
+            <article class="info-card">
+                <span class="info-icono" aria-hidden="true">🎉</span>
+                <h4>Pedidos para eventos</h4>
+                <p>¿Asado familiar o reunión de empresa? Para pedidos de más de 5 kg te enviamos una cotización especial.</p>
+                <a href="#contacto" class="btn-2">Pedir cotización</a>
+            </article>
+            <article class="info-card">
+                <span class="info-icono" aria-hidden="true">📖</span>
+                <h4>Receta de la casa</h4>
+                <p>Cada corte tiene su receta paso a paso para que lo prepares en casa como un parrillero.</p>
+                <a href="#recetas" class="btn-2">Ver recetas</a>
+            </article>
+        </div>
+    </section>
+
+    <!-- ---------- Nosotros ---------- -->
+    <section class="recetas container" id="nosotros">
+        <div class="recetas-1">
+            <h3>Una carnicería y asador para los amantes de la carne</h3>
+            <hr>
+            <p>Nosotros</p>
+        </div>
+        <div class="recetas-2">
+            Fuego, <br> carbón y <br> sabor
+        </div>
+    </section>
+
+    <section class="container seccion-info">
+        <div class="nosotros-card">
+            <p>En <strong>Beef</strong> unimos dos cosas: una carnicería donde eliges cortes seleccionados por kilo y un
+                asador donde preparamos platos al carbón al momento. Así puedes llevar la carne para cocinarla en casa
+                o pedirla lista para comer.</p>
+            <ul class="nosotros-valores">
+                <li><strong>Cortes seleccionados.</strong> Revisamos cada pieza antes de ponerla a la venta.</li>
+                <li><strong>Parrilla al carbón.</strong> Los platos se preparan al momento, no se recalientan.</li>
+                <li><strong>Atención cercana.</strong> Te aconsejamos qué corte elegir y cómo prepararlo.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ---------- Preguntas frecuentes ---------- -->
+    <section class="recetas container" id="preguntas">
+        <div class="recetas-1">
+            <h3>Resolvemos tus dudas antes de pedir</h3>
+            <hr>
+            <p>Preguntas frecuentes</p>
+        </div>
+        <div class="recetas-2">
+            ¿Tienes <br> alguna <br> duda?
+        </div>
+    </section>
+
+    <section class="container seccion-info">
+        <div class="faq">
+            <details>
+                <summary>¿Cómo hago un pedido?</summary>
+                <p>Agrega los platos o cortes al carrito, ábrelo con el ícono de arriba y pulsa «Hacer pedido».
+                    Escribe tus datos, elige cómo quieres recibirlo y la forma de pago, y confirma.
+                    Después puedes enviarnos el resumen por WhatsApp para confirmarlo más rápido.</p>
+            </details>
+            <details>
+                <summary>¿Qué formas de pago reciben?</summary>
+                <p>Efectivo, Nequi, Daviplata, tarjeta y transferencia.</p>
+            </details>
+            <details>
+                <summary>¿Hasta qué hora hacen domicilios?</summary>
+                <p>Hasta 30 minutos antes del cierre. El horario de cada día está en la sección
+                    <a href="#horarios">Horarios</a>.</p>
+            </details>
+            <details>
+                <summary>¿Cuántos kilos puedo pedir de un corte?</summary>
+                <p>Hasta 50 kg de cada producto por pedido. Si necesitas más, escríbenos y te enviamos una cotización.</p>
+            </details>
+            <details>
+                <summary>¿Cómo sé en qué va mi pedido?</summary>
+                <p>Pregúntale al asistente virtual (el chat de la esquina) con tu número de pedido y el correo que usaste.</p>
+            </details>
+            <details id="pregunta-datos">
+                <summary>¿Qué hacen con mis datos personales?</summary>
+                <p>Usamos tu nombre, correo, teléfono y dirección solo para atender tu pedido o responder tu mensaje,
+                    según la Ley 1581 de 2012. No los vendemos ni los compartimos. Si quieres consultarlos, corregirlos
+                    o que los borremos, escríbenos por el formulario de contacto.</p>
+            </details>
+        </div>
+    </section>
+
+    <!-- ---------- Datos de respaldo ---------- -->
+    <script type="application/json" id="datos-respaldo">{"recetas": [{"id_receta": 1, "titulo": "Ribeye a la parrilla con chimichurri", "descripcion": "El clásico de la parrilla: un ribeye jugoso, sellado a fuego alto y servido con chimichurri casero, rúgula y limón.", "tiempo_minutos": 45, "porciones": 2, "dificultad": "Fácil", "imagen": "Images/recetas/ribeye-chimichurri.webp", "ingredientes": ["600 g de ribeye (2 piezas de 2,5 cm de grosor)", "1 cucharada de sal gruesa", "1 cucharadita de pimienta negra molida", "1 taza de perejil fresco picado", "3 dientes de ajo picados finamente", "1 cucharadita de orégano seco", "½ cucharadita de ají en hojuelas", "½ taza de aceite de oliva", "3 cucharadas de vinagre de vino tinto", "Rúgula, tomates cherry y limón para acompañar"], "pasos": ["Saca la carne de la nevera 30 minutos antes de cocinarla para que se ase de forma pareja.", "Prepara el chimichurri: mezcla el perejil, el ajo, el orégano, el ají, el aceite, el vinagre y una pizca de sal. Déjalo reposar mientras calientas la parrilla.", "Precalienta la parrilla o una sartén de hierro a fuego alto.", "Seca la carne con papel de cocina y sazónala por ambos lados con la sal gruesa y la pimienta.", "Asa 4 a 5 minutos por cada lado para término medio, sin moverla para que quede bien marcada.", "Deja reposar la carne 5 minutos sobre una tabla antes de cortarla, así conserva sus jugos.", "Sirve con el chimichurri por encima, la rúgula, los tomates cherry y una rodaja de limón."], "id_producto": 5, "corte": "Ribeye (ojo de bife)", "precio_corte": 68000, "imagen_corte": "Images/c1.webp", "corte_disponible": true}, {"id_receta": 2, "titulo": "Medallones de lomo con reducción de vino tinto", "descripcion": "Medallones tiernos sellados en mantequilla y romero, bañados con una reducción brillante de vino tinto y balsámico.", "tiempo_minutos": 30, "porciones": 2, "dificultad": "Media", "imagen": "Images/recetas/medallones-vino.webp", "ingredientes": ["4 medallones de lomo (unos 500 g)", "Sal y pimienta al gusto", "1 cucharada de aceite", "1 cucharada de mantequilla", "1 diente de ajo machacado", "1 ramita de romero fresco", "1 taza de vino tinto", "2 cucharadas de vinagre balsámico", "1 cucharada de azúcar morena o miel", "Tomates cherry y tomillo para decorar"], "pasos": ["En una olla pequeña pon el vino, el vinagre balsámico y el azúcar. Cocina a fuego medio 10 a 12 minutos hasta que espese como un jarabe. Reserva.", "Seca los medallones y sazónalos con sal y pimienta.", "Calienta el aceite en una sartén a fuego alto y sella los medallones 3 minutos por cada lado.", "Baja el fuego, agrega la mantequilla, el ajo y el romero, y baña la carne con la mantequilla derretida durante 1 minuto.", "Retira los medallones y déjalos reposar 3 minutos.", "Sirve en el plato, dibuja líneas con la reducción y acompaña con tomates cherry y tomillo."], "id_producto": 6, "corte": "Medallones de lomo", "precio_corte": 58000, "imagen_corte": "Images/c2.webp", "corte_disponible": true}, {"id_receta": 3, "titulo": "Chuleta de res asada con mazorca y papa criolla", "descripcion": "Chuleta con hueso marinada en ajo, comino y naranja, asada lentamente y servida con mazorca, papa criolla y verduras.", "tiempo_minutos": 90, "porciones": 4, "dificultad": "Media", "imagen": "Images/recetas/chuleta-mazorca.webp", "ingredientes": ["1 kg de chuleta de res con hueso", "4 dientes de ajo machacados", "1 cucharadita de comino", "1 cucharadita de paprika", "Jugo de 1 naranja", "2 cucharadas de salsa negra", "3 cucharadas de aceite", "Sal y pimienta al gusto", "2 mazorcas partidas en trozos", "500 g de papa criolla", "1 taza de brócoli y 1 taza de habichuelas"], "pasos": ["Mezcla el ajo, el comino, la paprika, el jugo de naranja, la salsa negra, el aceite, la sal y la pimienta. Cubre las chuletas con la marinada y déjalas en la nevera por lo menos 1 hora.", "Cocina las mazorcas en agua con sal durante 15 minutos.", "Cocina las papas criollas en agua con sal 12 a 15 minutos, hasta que estén blandas.", "Calienta la parrilla a fuego medio-alto y asa las chuletas 6 a 7 minutos por cada lado.", "Pasa las mazorcas por la parrilla 2 minutos para que tomen color.", "Cocina el brócoli y las habichuelas en agua hirviendo 3 minutos y pásalos por agua fría para que queden verdes.", "Deja reposar la carne 5 minutos, córtala en tiras junto al hueso y sirve con las mazorcas, las papas y las verduras."], "id_producto": 7, "corte": "Chuleta de res con hueso", "precio_corte": 28000, "imagen_corte": "Images/c3.webp", "corte_disponible": true}, {"id_receta": 4, "titulo": "Bowl de lomo de aguja salteado", "descripcion": "Tiras finas de lomo de aguja salteadas en soya y miel, sobre arroz con ahuyama, habichuelas, tomate y aguacate.", "tiempo_minutos": 40, "porciones": 3, "dificultad": "Fácil", "imagen": "Images/recetas/aguja-salteada.webp", "ingredientes": ["500 g de lomo de aguja en tiras finas (cortadas en contra de la fibra)", "3 cucharadas de salsa soya", "1 cucharada de miel", "2 dientes de ajo rallados", "1 cucharadita de jengibre rallado", "2 cucharadas de aceite", "3 tazas de arroz cocido", "1 taza de ahuyama en cubos", "1 taza de habichuelas", "1 tomate en gajos y 1 aguacate en tajadas", "Cilantro fresco al gusto"], "pasos": ["Mezcla la carne con la soya, la miel, el ajo y el jengibre. Deja marinar 15 minutos.", "Cocina la ahuyama al vapor 8 minutos y las habichuelas 4 minutos.", "Calienta el aceite en una sartén grande a fuego muy alto.", "Saltea la carne en dos tandas, 3 a 4 minutos cada una, para que se dore y no suelte agua.", "Sirve el arroz en cada bowl y acomoda encima la carne, la ahuyama, las habichuelas, el tomate y el aguacate.", "Termina con cilantro fresco por encima."], "id_producto": 8, "corte": "Lomo de aguja", "precio_corte": 26000, "imagen_corte": "Images/c4.webp", "corte_disponible": true}], "horarios": [{"dia_semana": 1, "nombre_dia": "Lunes", "hora_apertura": "11:00", "hora_cierre": "21:00", "cerrado": false}, {"dia_semana": 2, "nombre_dia": "Martes", "hora_apertura": "11:00", "hora_cierre": "21:00", "cerrado": false}, {"dia_semana": 3, "nombre_dia": "Miércoles", "hora_apertura": "11:00", "hora_cierre": "21:00", "cerrado": false}, {"dia_semana": 4, "nombre_dia": "Jueves", "hora_apertura": "11:00", "hora_cierre": "21:00", "cerrado": false}, {"dia_semana": 5, "nombre_dia": "Viernes", "hora_apertura": "11:00", "hora_cierre": "22:30", "cerrado": false}, {"dia_semana": 6, "nombre_dia": "Sábado", "hora_apertura": "11:00", "hora_cierre": "22:30", "cerrado": false}, {"dia_semana": 7, "nombre_dia": "Domingo y festivos", "hora_apertura": "11:00", "hora_cierre": "17:00", "cerrado": false}]}</script>
+
+    <section class="recetas container" id="contacto">
+        <div class="recetas-1">
+            <h3>¿Tienes un pedido especial o un evento? Escríbenos</h3>
+            <hr>
+            <p>Contacto</p>
+        </div>
+    </section>
+
+    <footer class="footer container">
+        <div class="links">
+            <div class="link">
+                <h3>Beef<span>.</span></h3>
+                <p>Carnes seleccionadas, maduradas y preparadas con pasión por la parrilla.
+                    Síguenos para conocer nuestras promociones y nuevos cortes.
+                </p>
+                <div class="socials-2">
+                    <img src="Images/s1.svg" alt="Instagram de Beef">
+                    <img src="Images/s2.svg" alt="Facebook de Beef">
+                    <img src="Images/s3.svg" alt="X (Twitter) de Beef">
+                </div>
+            </div>
+            <div class="link">
+                <h3>Menú</h3>
+                <ul>
+                    <li><a href="#lista">Platos a la parrilla</a></li>
+                    <li><a href="#lista-2">Cortes por kilo</a></li>
+                    <li><a href="#recetas">Recetas</a></li>
+                    <li><a href="#promociones">Promociones</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>Información</h3>
+                <ul>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#horarios">Domicilios</a></li>
+                    <li><a href="#horarios">Horarios</a></li>
+                    <li><a href="#preguntas">Preguntas frecuentes</a></li>
+                    <li><a href="https://wa.me/573142170438?text=%C2%A1Hola%2C%20Beef%21%20Tengo%20una%20pregunta." target="_blank" rel="noopener">WhatsApp</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>Escríbenos</h3>
+                <form id="form-contacto">
+                    <input type="text" name="nombre" placeholder="Nombre" class="inp" required>
+                    <input type="text" name="sitio_web" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+                    <input type="email" name="correo" placeholder="Correo electrónico" class="inp" required>
+                    <textarea name="mensaje" class="inp" rows="3" placeholder="Mensaje" required></textarea>
+                    <label class="autoriza-datos">
+                        <input type="checkbox" name="autoriza_datos" required>
+                        <span>Autorizo el tratamiento de mis datos personales según la Ley 1581 de 2012.
+                            <a href="#pregunta-datos">¿Para qué se usan?</a></span>
+                    </label>
+                    <input class="btn-4" type="submit" value="Enviar">
+                    <p class="form-mensaje" id="contacto-mensaje" aria-live="polite"></p>
+                </form>
+            </div>
+        </div>
+        <p class="copy">© 2026 Beef. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- ---------- Ventana con la receta completa ---------- -->
+    <dialog id="dialogo-receta" class="dialogo dialogo-receta">
+        <div id="receta-contenido"></div>
+    </dialog>
+
+    <!-- ---------- Ventana para confirmar el pedido ---------- -->
+    <dialog id="dialogo-pedido" class="dialogo">
+        <form id="form-pedido" method="dialog">
+            <div class="dialogo-header">
+                <h3>Confirmar pedido</h3>
+                <button type="button" class="dialogo-cerrar" id="cerrar-pedido" aria-label="Cerrar">&times;</button>
+            </div>
+
+            <p class="dialogo-resumen">Total: <strong id="pedido-total">$0</strong></p>
+
+            <div class="form-fila">
+                <input type="text" name="nombre" placeholder="Nombre" class="inp" required>
+                <input type="text" name="sitio_web" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+                <input type="text" name="apellido" placeholder="Apellido" class="inp" required>
+            </div>
+            <div class="form-fila">
+                <input type="email" name="correo" placeholder="Correo electrónico" class="inp" required>
+                <input type="tel" name="telefono" placeholder="Teléfono" class="inp" required>
+            </div>
+            <div class="form-fila">
+                <select name="tipo_entrega" class="inp" id="tipo-entrega">
+                    <option value="domicilio">Domicilio</option>
+                    <option value="recoger">Recoger en el local</option>
+                    <option value="mesa">Comer en el local</option>
+                </select>
+                <select name="metodo_pago" class="inp">
+                    <option value="efectivo">Efectivo</option>
+                    <option value="nequi">Nequi</option>
+                    <option value="daviplata">Daviplata</option>
+                    <option value="tarjeta">Tarjeta</option>
+                    <option value="transferencia">Transferencia</option>
+                </select>
+            </div>
+            <div class="form-fila" id="campos-direccion">
+                <input type="text" name="direccion" placeholder="Dirección" class="inp">
+                <input type="text" name="ciudad" placeholder="Ciudad" class="inp">
+            </div>
+            <textarea name="observaciones" class="inp" rows="2" placeholder="Observaciones (opcional)"></textarea>
+            <label class="autoriza-datos">
+                <input type="checkbox" name="autoriza_datos" required>
+                <span>Autorizo el tratamiento de mis datos personales según la Ley 1581 de 2012.
+                    <a href="#pregunta-datos">¿Para qué se usan?</a></span>
+            </label>
+
+            <p class="form-mensaje" id="pedido-mensaje" aria-live="polite"></p>
+            <a class="btn-whatsapp" id="pedido-whatsapp" href="https://wa.me/573142170438" target="_blank" rel="noopener" hidden>
+                <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path fill="currentColor" d="M16 3C8.8 3 3 8.6 3 15.6c0 2.5.7 4.8 2 6.8L3.6 29l6.8-1.8c1.7.9 3.6 1.4 5.6 1.4 7.2 0 13-5.6 13-12.6S23.2 3 16 3zm0 23.2c-1.8 0-3.6-.5-5.1-1.4l-.4-.2-4 1 1.1-3.8-.3-.4c-1.1-1.7-1.6-3.6-1.6-5.6C5.7 10.1 10.3 5.6 16 5.6s10.3 4.5 10.3 10.4S21.7 26.2 16 26.2z"/><path fill="currentColor" d="M21.6 18.6c-.3-.2-1.8-.9-2.1-1s-.5-.2-.7.2-.8 1-.9 1.2-.3.2-.6.1c-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1s0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5s0-.4 0-.5-.7-1.6-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4s-1 1-1 2.4 1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5 0 1.8-.7 2-1.5.2-.7.2-1.3.2-1.5-.1-.1-.3-.2-.6-.3z"/></svg>
+                <span>Enviar pedido por WhatsApp</span>
+            </a>
+            <button type="submit" class="btn-4" id="enviar-pedido">Confirmar pedido</button>
+        </form>
+    </dialog>
+
+    <!-- ---------- WhatsApp ---------- -->
+    <a class="whatsapp-flotante" href="https://wa.me/573142170438?text=%C2%A1Hola%2C%20Beef%21%20Tengo%20una%20pregunta." target="_blank" rel="noopener"
+        aria-label="Escríbenos por WhatsApp" title="Escríbenos por WhatsApp">
+        <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path fill="currentColor" d="M16 3C8.8 3 3 8.6 3 15.6c0 2.5.7 4.8 2 6.8L3.6 29l6.8-1.8c1.7.9 3.6 1.4 5.6 1.4 7.2 0 13-5.6 13-12.6S23.2 3 16 3zm0 23.2c-1.8 0-3.6-.5-5.1-1.4l-.4-.2-4 1 1.1-3.8-.3-.4c-1.1-1.7-1.6-3.6-1.6-5.6C5.7 10.1 10.3 5.6 16 5.6s10.3 4.5 10.3 10.4S21.7 26.2 16 26.2z"/><path fill="currentColor" d="M21.6 18.6c-.3-.2-1.8-.9-2.1-1s-.5-.2-.7.2-.8 1-.9 1.2-.3.2-.6.1c-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1s0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5s0-.4 0-.5-.7-1.6-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4s-1 1-1 2.4 1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5 0 1.8-.7 2-1.5.2-.7.2-1.3.2-1.5-.1-.1-.3-.2-.6-.3z"/></svg>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8.4.7/swiper-bundle.min.js"></script>
+    <script src="Script.js"></script>
+    <script src="asistente.js"></script>
+</body>
+
+</html>
